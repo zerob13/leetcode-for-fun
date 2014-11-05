@@ -31,22 +31,17 @@ public class WordLadder {
 		}
 		int dict_size = dict.size();
 		int[] hashs = new int[dict_size];
-		int[] hashe = new int[dict_size];
 		for (int i = 0; i < dict_size; i++) {
 			hashs[i] = -1;
-			hashe[i] = -1;
 		}
 		String[] dicts = new String[dict_size];
 		dict.toArray(dicts);
 		MyNode root = new MyNode();
 		root.now = new String(start);
 		root.step = 1;
-		MyNode target = new MyNode();
-		target.now = new String(end);
-		target.step = 1;
 		LinkedList<MyNode> nodes = new LinkedList<MyNode>();
 		nodes.addLast(root);
-		while (!nodes.isEmpty() || !nodes.isEmpty()) {
+		while (!nodes.isEmpty()) {
 			MyNode current = nodes.pollFirst();
 			if (isOnlyOneDiff(current.now, end)) {
 				return current.step + 1;
