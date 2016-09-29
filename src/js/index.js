@@ -1,3 +1,3 @@
 import reverseString from './ReverseString';
 
-console.dir(reverseString(''));
+console.dir(reverseString('hello'));

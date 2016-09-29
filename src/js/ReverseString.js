@@ -3,21 +3,10 @@
  * @return {string}
  */
 var reverseString = function (s) {
-  let b = s.split('');
-  let len = b.length;
-  let i = 0;
-  let j = len - 1;
-  for (; i < j; i++, j--) {
-    let t = b[i];
-    b[i] = b[j];
-    b[j] = t;
+  var b = '';
+  for (let i = s.length - 1; i >= 0; i--) {
+    b += s[i];
   }
-  if (b.length > 0) {
-    return b.reduce((pv, cv)=> {
-      return pv + cv;
-    });
-  } else {
-    return '';
-  }
+  return b;
 };
 export default reverseString;
