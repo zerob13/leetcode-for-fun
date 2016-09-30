@@ -1,5 +1,4 @@
-import delNode from './DeleteNodeinALinkedList';
-
+import titleToNum from './ExcelSheetColumnNumber';
 function TreeNode(val) {
   this.val = val;
   this.left = this.right = null;
@@ -9,11 +8,6 @@ function ListNode(val) {
   this.next = null;
 }
 
-var root = new ListNode(0);
-root.next = new ListNode(0);
-root.next.next = new ListNode(0);
-root.next.next.next = new ListNode(0);
-
-delNode(root);
-console.dir(root);
+console.dir(titleToNum('AA'));
+console.dir(titleToNum('Z'));
 
