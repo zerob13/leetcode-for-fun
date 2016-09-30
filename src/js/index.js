@@ -1,3 +1,19 @@
-import moveZeros from './MoveZeros';
+import delNode from './DeleteNodeinALinkedList';
 
-console.dir(moveZeros([0, 0, 1]));
+function TreeNode(val) {
+  this.val = val;
+  this.left = this.right = null;
+}
+function ListNode(val) {
+  this.val = val;
+  this.next = null;
+}
+
+var root = new ListNode(0);
+root.next = new ListNode(0);
+root.next.next = new ListNode(0);
+root.next.next.next = new ListNode(0);
+
+delNode(root);
+console.dir(root);
+
