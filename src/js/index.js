@@ -1,7 +1,3 @@
-import canWin from './NimGame';
+import moveZeros from './MoveZeros';
 
-console.dir(canWin(1));
-console.dir(canWin(2));
-console.dir(canWin(3));
-console.dir(canWin(4));
-console.dir(canWin(10));
+console.dir(moveZeros([0, 0, 1]));
