@@ -1,4 +1,4 @@
-import readBw from './BinaryWatch';
+import rever from './ReverseLinkedList';
 
 function TreeNode(val) {
   this.val = val;
@@ -8,27 +8,7 @@ function ListNode(val) {
   this.val = val;
   this.next = null;
 }
-console.log('[')
-console.dir(readBw(0));
-console.log(',')
-console.dir(readBw(1));
-console.log(',')
-console.dir(readBw(2));
-console.log(',')
-console.dir(readBw(3));
-console.log(',')
-console.dir(readBw(4));
-console.log(',')
-console.dir(readBw(5));
-console.log(',')
-console.dir(readBw(6));
-console.log(',')
-console.dir(readBw(7));
-console.log(',')
-console.dir(readBw(8));
-console.log(',')
-console.dir(readBw(9));
-console.log(',')
-console.dir(readBw(10));
-console.log(']');
 
+var head = new ListNode(1);
+head.next = new ListNode(2);
+console.dir(rever(head));
