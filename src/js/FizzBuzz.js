@@ -21,7 +21,7 @@ var fizzBuzz = function(n) {
         map[i]='Buzz';
         continue;
       }
-      map[i]=t;
+      map[i]=t.toString();
     }
     return map.slice(0,n);
   }
