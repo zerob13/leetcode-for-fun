@@ -10,16 +10,8 @@
  * @param {string} t
  * @return {boolean}
  */
-var isSubsequence = function (s, t) {
-  let si = 0;
-  for (let i = 0; i < t.length; i++) {
-    if (s[si] == t[i]) {
-      si++;
-    }
-    if (si == s.length) {
-      break;
-    }
-  }
-  return si == s.length;
+var isSubsequence = function(s, t) {
+
 };
 // @lc code=end
+
